@@ -72,8 +72,8 @@ public class EyeGazeTest : MonoBehaviour
         }
 
         // Get eye tracking confidence
-        bool leftConfident = leftEyeGaze.Confidence > 0.5f;
-        bool rightConfident = rightEyeGaze.Confidence > 0.5f;
+        bool leftConfident = leftEyeGaze.Confidence > 0.0f;
+        bool rightConfident = rightEyeGaze.Confidence > 0.0f;
 
         // Log basic eye gaze data
         Debug.Log($"=== Eye Gaze Data ===");
